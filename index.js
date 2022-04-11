@@ -24,9 +24,7 @@ var con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-	app.get('/', function(req, res) {
-		res.send("pong!");
-	});
+	if (err) {console.log(err)}
 	
 });
 
@@ -148,3 +146,5 @@ app.post('/apiCheck', function(req, res) {
 });
 
 app.listen(80);
+
+console.log('Everything is OK. API is up and listening on port 80.');
