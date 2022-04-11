@@ -9,9 +9,9 @@ const Bottleneck = require("bottleneck");
 var mysql = require('mysql');
 var userIsAuthorised;
 
-var dbUser = process.env.dbUser;
-var dbPassword = process.env.dbPassword;
-var dbHost = process.env.dbHost;
+var dbUser = "netclaw";
+var dbPassword = "mJs2Hk6saSaT8gkE"; // You seriously suck if you try and breach our database.
+var dbHost = "netclaw-prod-db.mysql.database.azure.com";
 
 console.log(`dbUser ->> ${dbUser}`);
 
@@ -22,7 +22,7 @@ var con = mysql.createConnection({
 	host: dbHost,
 	user: dbUser,
 	password: dbPassword,
-	database: "NetClaw"
+	database: "netclaw"
 });
 
 con.connect(function(err) {
