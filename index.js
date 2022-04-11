@@ -1,3 +1,5 @@
+console.log('Starting Netclaw API. Please wait...');
+
 const express = require('express');
 const app = express();
 const responseServer = express();
