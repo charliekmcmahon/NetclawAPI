@@ -2,6 +2,8 @@
 Netclaw is an online claw machine, playable from a browser. This is the API that manages the requests sent to and from machines and further handles security.
 
 ## Netclaw Services
+### Core API
+[![NetclawAPI](https://github.com/charliekmcmahon/NetclawAPI/actions/workflows/main_netclawapi.yml/badge.svg)](https://github.com/charliekmcmahon/NetclawAPI/actions/workflows/main_netclawapi.yml)
 ### PHP Web App
 [![PHP Site](https://github.com/charliekmcmahon/netclaw-development/actions/workflows/main_netclawproduction.yml/badge.svg)](https://github.com/charliekmcmahon/netclaw-development/actions/workflows/main_netclawproduction.yml)
 ### Stream Proxy
