@@ -156,6 +156,10 @@ responseServer.get('/'), function(req, res) {
 	res.send('Hello World!');
 };
 
+responseServer.get('/api/ping'), function(req, res) {
+	res.send('Hello World!');
+};
+
 app.listen(80);
 responseServer.listen(8080);
 
