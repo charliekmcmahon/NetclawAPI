@@ -26,7 +26,10 @@ var con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-	if (err) throw err;
+	app.get('/', function(req, res) {
+		res.send("pong!");
+	});
+	
 });
 
 function makeRequest(fullNodeURL, command) {
