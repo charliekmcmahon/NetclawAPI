@@ -6,9 +6,12 @@ const got = require('got');
 const Bottleneck = require("bottleneck");
 var mysql = require('mysql');
 var userIsAuthorised;
+
 const dbPassword = process.env['dbPassword']
 const dbUser = process.env['dbUser']
 const dbHost = process.env['dbHost']
+
+console.log(dbPassword);
 
 var goUsers = [];
 
