@@ -139,6 +139,10 @@ app.post('/api', function(req, res) {
 
 });
 
+app.get('/', function(req, res) {
+	res.send("Hello, World!");
+});
+
 app.get('/api/ping', function(req, res) {
 	res.send("pong!");
 });
