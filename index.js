@@ -145,6 +145,6 @@ app.post('/apiCheck', function(req, res) {
 	res.status(400);
 });
 
-app.listen(443);
+app.listen(80);
 
-console.log('Everything is OK. API is up and listening on port 80.');
+console.log(`Everything is OK. API is up and listening on port 80. --> ${Date.now()}`);
