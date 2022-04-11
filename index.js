@@ -1,5 +1,6 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const responseServer = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const got = require('got');
@@ -145,6 +146,11 @@ app.post('/apiCheck', function(req, res) {
 	res.status(400);
 });
 
-app.listen(80);
+responseServer.get('/'), function(req, res) {
+	res.send('Hello World!');
+};
 
-console.log(`Everything is OK. API is up and listening on port 80. --> ${Date.now()}`);
+app.listen(80);
+responseServer.listen(8080);
+
+console.log(`Everything is OK. API is up and listening on port 80 and 8080.`);
