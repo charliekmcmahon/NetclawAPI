@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
@@ -7,11 +9,11 @@ const Bottleneck = require("bottleneck");
 var mysql = require('mysql');
 var userIsAuthorised;
 
-const dbPassword = process.env['dbPassword']
-const dbUser = process.env['dbUser']
-const dbHost = process.env['dbHost']
+var dbUser = process.env.dbUser;
+var dbPassword = process.env.dbPassword;
+var dbHost = process.env.dbHost;
 
-console.log(dbPassword);
+console.log(`dbUser ->> ${dbUser}`);
 
 var goUsers = [];
 
