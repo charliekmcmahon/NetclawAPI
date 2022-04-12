@@ -13,8 +13,6 @@ var dbUser = "netclaw";
 var dbPassword = "mJs2Hk6saSaT8gkE"; // You seriously suck if you try and breach our database.
 var dbHost = "netclaw-prod-db.mysql.database.azure.com";
 
-console.log(`dbUser ->> ${dbUser}`);
-
 var goUsers = [];
 
 // SQL Connection & Error check
@@ -29,6 +27,8 @@ con.connect(function(err) {
 	if (err) {console.log(err)}
 	
 });
+
+console.log('Successfully connected to db.');
 
 function makeRequest(fullNodeURL, command) {
 	// Make the web reqest to the node
