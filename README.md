@@ -5,13 +5,13 @@ Netclaw is an online claw machine, playable from a browser. This is the API that
 ### Core API
 #### Build & Deployment Pipeline
 [![NetclawAPI](https://github.com/charliekmcmahon/NetclawAPI/actions/workflows/main_netclawapi.yml/badge.svg)](https://github.com/charliekmcmahon/NetclawAPI/actions/workflows/main_netclawapi.yml)
-#### API HTTP Endpoints
+#### API HTTP Response
 [![Website api.netclaw.com.au](https://img.shields.io/website-up-down-green-red/http/api.netclaw.com.au.svg)](https://api.netclaw.com.au/)
 ### Netclaw Website
 #### Build & Deployment Pipeline
 [![PHP Site](https://github.com/charliekmcmahon/netclaw-development/actions/workflows/main_netclawproduction.yml/badge.svg)](https://github.com/charliekmcmahon/netclaw-development/actions/workflows/main_netclawproduction.yml)
 #### HTTP Traffic
-[![Website netclaw.com.au](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://netclaw.com.au/)
+[![Website netclaw.com.au](https://img.shields.io/website-up-down-green-red/http/netclaw.com.au.svg)](https://netclaw.com.au/)
 ### Stream Proxy Server
 #### Build & Deployment Pipeline
 [![Stream Proxy](https://github.com/charliekmcmahon/Mjpeg-Proxy/actions/workflows/master_netclawvideoproxy.yml/badge.svg)](https://github.com/charliekmcmahon/Mjpeg-Proxy/actions/workflows/master_netclawvideoproxy.yml)
