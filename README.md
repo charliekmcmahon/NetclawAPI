@@ -6,7 +6,7 @@ Netclaw is an online claw machine, playable from a browser. This is the API that
 #### Build & Deployment Pipeline
 [![NetclawAPI](https://github.com/charliekmcmahon/NetclawAPI/actions/workflows/main_netclawapi.yml/badge.svg)](https://github.com/charliekmcmahon/NetclawAPI/actions/workflows/main_netclawapi.yml)
 #### API HTTP Endpoints
-[![Website https://api.netclaw.com.au/api/ping](https://img.shields.io/website-up-down-green-red/http/https://api.netclaw.com.au.svg)](https://api.netclaw.com.au/api/ping)
+[![Website api.netclaw.com.au](https://img.shields.io/website-up-down-green-red/http/api.netclaw.com.au.svg)](https://api.netclaw.com.au/)
 ### Netclaw Website
 #### Build & Deployment Pipeline
 [![PHP Site](https://github.com/charliekmcmahon/netclaw-development/actions/workflows/main_netclawproduction.yml/badge.svg)](https://github.com/charliekmcmahon/netclaw-development/actions/workflows/main_netclawproduction.yml)
