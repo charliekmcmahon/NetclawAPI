@@ -2,8 +2,6 @@ console.log('Starting Netclaw API. Please wait...');
 
 const express = require('express');
 const app = express();
-const responseServer = express();
-const testServer = express(); // test on 443
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const got = require('got');
@@ -153,24 +151,7 @@ app.post('/apiCheck', function(req, res) {
 	res.status(400);
 });
 
-responseServer.get('/'), function(req, res) {
-	res.send('Hello World!');
-};
-
-responseServer.get('/api/ping'), function(req, res) {
-	res.send('Hello World!');
-};
-
-testServer.get('/api/ping'), function(req, res) {
-	res.send('Hello World!');
-};
-
-testServer.get('/'), function(req, res) {
-	res.send('Hello World!');
-};
 
 app.listen(80);
-responseServer.listen(8080);
-testServer.listen(443);
 
 console.log(`Everything is OK. API is up and listening on port 80 and 8080.`);
