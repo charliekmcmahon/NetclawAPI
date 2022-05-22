@@ -126,4 +126,12 @@ app.post('/api/check', function(req, res) {
 
 app.listen(80);
 
+let app2 = express();
+
+app2.get('/', function(req, res) {
+	res.send("Hello, World!");
+});
+
+app2.listen(8080);
+
 console.log(`Everything is OK. API is up and listening on port 80 and 8080.`);
