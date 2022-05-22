@@ -1,19 +1,22 @@
 {
-  "name": "netclawapi",
+  "name": "NetclawAPI",
   "version": "1.0.0",
-  "description": "Netclaw is an online claw machine, playable from a browser. This is the API that manages the requests sent to and from machines and further handles security.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm ci"
+    "test": "npm i",
+    "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charliekmcmahon/NetclawAPI.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/charliekmcmahon/NetclawAPI/issues"
-  },
-  "homepage": "https://github.com/charliekmcmahon/NetclawAPI#readme"
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bottleneck": "^2.19.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "mysql": "^2.18.1",
+    "unirest": "^0.6.0"
+  }
 }
