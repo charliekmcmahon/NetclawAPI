@@ -73,8 +73,6 @@ app.post('/api', function(req, res) {
 
 	console.log(`${requestTime} - ${nickname} - ${machineID} - ${command}`);
 
-});
-
 	try {
 		// Check if user is currently in the currentlyplaying table
 		con.query(`SELECT * FROM currentlyplaying WHERE machineID = '${machineID}'`, function (err, result) {
@@ -108,6 +106,8 @@ app.post('/api', function(req, res) {
 	else {
 		res.json({ code: "Error" });
 	}
+
+});
 	
 
 
