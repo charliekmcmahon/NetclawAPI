@@ -80,6 +80,7 @@ ports.forEach(function(port) {
 		try {
 			// Check if user is currently in the currentlyplaying table
 			con.query(`SELECT * FROM currentlyplaying WHERE machineID = '${machineID}'`, function (err, result) {
+				userAuthorised = false;
 				if (err) throw err;
 				if (result.length > 0) {
 					dbNickname = result[0].userNickname;
@@ -96,22 +97,22 @@ ports.forEach(function(port) {
 				else {
 					userAuthorised = false;
 				}
+
+				if (userAuthorised == true) {
+					// Send the request
+					makeRequest(command, machineID);
+					res.json({ code: "Success" });
+				}
+				else if (userAuthorised == false) {
+					res.json({ code: "Unauthorised" });
+				}
+				else {
+					res.json({ code: "Error 110A" });
+				}
 			});
-			
-			if (userAuthorised == true) {
-				// Send the request
-				makeRequest(command, machineID);
-				res.json({ code: "Success" });
-			}
-			else if (userAuthorised == false) {
-				res.json({ code: "Unauthorised" });
-			}
-			else {
-				res.json({ code: "Error 107A" });
-			}
 
 		} catch (error) {
-			res.json({ code: "Error 111A" });
+			res.json({ code: "Error 115A" });
 		}
 
 	});
