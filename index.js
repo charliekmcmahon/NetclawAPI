@@ -104,7 +104,7 @@ ports.forEach(function(port) {
 			makeRequest(command, machineID);
 			res.json({ code: "Success" });
 		}
-		else if (userIsAuthorised == false) {
+		else if (userAuthorised == false) {
 			res.json({ code: "Unauthorised" });
 		}
 		else {
