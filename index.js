@@ -93,6 +93,9 @@ ports.forEach(function(port) {
 						userAuthorised = false;
 					}
 				}
+				else {
+					userAuthorised = false;
+				}
 			});
 			
 			if (userAuthorised == true) {
