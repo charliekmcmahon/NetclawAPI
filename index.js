@@ -96,7 +96,7 @@ ports.forEach(function(port) {
 			});
 
 		} catch (error) {
-			res.json({ code: "Error" });
+			res.json({ code: "Error 99A" });
 		}
 
 		if (userAuthorised == true) {
@@ -108,7 +108,7 @@ ports.forEach(function(port) {
 			res.json({ code: "Unauthorised" });
 		}
 		else {
-			res.json({ code: "Error" });
+			res.json({ code: "Error 111A" });
 		}
 
 	});
