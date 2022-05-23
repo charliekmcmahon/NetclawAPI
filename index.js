@@ -94,20 +94,20 @@ ports.forEach(function(port) {
 					}
 				}
 			});
+			
+			if (userAuthorised == true) {
+				// Send the request
+				makeRequest(command, machineID);
+				res.json({ code: "Success" });
+			}
+			else if (userAuthorised == false) {
+				res.json({ code: "Unauthorised" });
+			}
+			else {
+				res.json({ code: "Error 107A" });
+			}
 
 		} catch (error) {
-			res.json({ code: "Error 99A" });
-		}
-
-		if (userAuthorised == true) {
-			// Send the request
-			makeRequest(command, machineID);
-			res.json({ code: "Success" });
-		}
-		else if (userAuthorised == false) {
-			res.json({ code: "Unauthorised" });
-		}
-		else {
 			res.json({ code: "Error 111A" });
 		}
 
